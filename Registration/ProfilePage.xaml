@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registration.ProfilePage"
+             Title="ProfilePage"
+             Padding="50">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="lbFirstName"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="20" />
+            
+            <Label 
+            x:Name="lbAge"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="25" TextColor="red" />
+
+            <Label 
+            x:Name="lbGender"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="25" TextColor="red" />
+
+            <Label 
+            x:Name="lbEmail"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="25" TextColor="red" />
+
+            <Label 
+            x:Name="lbMobile"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="25" TextColor="red" />
+    </VerticalStackLayout>
+</ContentPage>

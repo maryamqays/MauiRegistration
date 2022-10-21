@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Registration.MainPage"
+             Title="Registration Form"
+             Padding="50"
+             >
+
+    <StackLayout>
+        <Entry x:Name="entFirstname" Keyboard="Text" Placeholder="First Name"></Entry>
+        <Entry x:Name="entLastname" Keyboard="Text" Placeholder="Last Name"></Entry>
+        <Entry x:Name="entPassword" Keyboard="Text" IsPassword="True" Placeholder="Password"></Entry>
+        <Entry x:Name="entAge" Keyboard="Numeric" Placeholder="Age"></Entry>
+        <Picker Title="Gender" x:Name="pickerGender">
+            <Picker.Items>
+                <x:String>Male</x:String>
+                <x:String>Female</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry x:Name="entEmail" Keyboard="Email" Placeholder="Email"></Entry>
+        <Entry x:Name="entMobile" Keyboard="Telephone" Placeholder="Phone No"></Entry>
+        <CheckBox CheckedChanged="CheckBox_CheckedChanged" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" IsChecked="False"></CheckBox>
+        <Label Text="I agree to terms and conditions"></Label>
+        <Button Clicked="btnRegister_Clicked" IsEnabled="False" BackgroundColor="Green" TextColor="White" x:Name="btnRegister" Text="Register"></Button>
+ 
+    </StackLayout>
+</ContentPage>
